@@ -1,5 +1,7 @@
 {
     "name": "alfa/trabalho1",
     "description": "Trabalho 01 - Composer e Git",
-    "require": {}
+    "require": {
+        "league/climate": "^3.5"
+    }
 }
