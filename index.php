@@ -17,7 +17,9 @@
 
     switch ($menu){
         case '1':
-
+            $numero1Input = $climate->input('Insira o 1° numero: ');
+            $numero1 = $numero1Input->prompt();
+            echo sprintf("Resultado é: %s", sqrt($numero1));
         break;
         case '2';
 
