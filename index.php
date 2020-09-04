@@ -4,7 +4,7 @@
     //local climate
     $climate = new League\CLImate\CLImate;
 
-    $climate->out('Trabalho Composer e GIT');
+    $climate->out('Trabalho Composer e GIT - Macoto Tecnologias Emergentes');
 
     //menu
     $climate->out('[1] Raiz quadrada');
