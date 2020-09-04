@@ -50,10 +50,15 @@
                 
 
             echo sprintf ("Resultado: %s", $result);
-            break;
-        case '3';
+        break;
+        case '3':
+            $numero1Input = $climate->input('Insira o numero base desejado:');
+            $numero1 = $numero1Input->prompt();
 
+            $expoInput = $climate->input('Insira o numero expoente desejado:');
+            $expo = $expoInput->prompt();
 
+            echo sprintf ("O resultado é: %s", pow($numero1, $expo));
         break;
         default:
 
