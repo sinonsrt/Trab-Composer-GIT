@@ -17,13 +17,40 @@
 
     switch ($menu){
         case '1':
-            $numero1Input = $climate->input('Insira o 1° numero: ');
+            $numero1Input = $climate->input('Insira o numero que deseja: ');
             $numero1 = $numero1Input->prompt();
             echo sprintf("Resultado é: %s", sqrt($numero1));
         break;
-        case '2';
+        case '2':
+            $numero1Input = $climate->input('Insira o numero que deseja:');
+            $numero1 = $numero1Input->prompt();   
+            
+            class Fatorial 
+            {    
+                public function calcular($fator)
+                {    
+                    $resultado = 1;
+                    for($i = $fator; $i > 1; $i--)
+                    {
+                        $resultado *= $fator;
+                        $fator--;                 
+                    }
+                    return $resultado;
+                }
+            }
+            $result = "";
+            if (isset($numero1) && is_numeric($numero1))
+            {
+                # Instancia a classe Fatorial()
+                $n1 = new Fatorial();
+        
+                # Executa a função
+                $result = $n1->calcular((int)$numero1);
+            }
+                
 
-        break;
+            echo sprintf ("Resultado: %s", $result);
+            break;
         case '3';
 
 
